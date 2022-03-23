@@ -1,13 +1,16 @@
-import { shallowMount } from "@vue/test-utils";
-import HeaderPrimary from ".";
+import { render } from "@testing-library/vue";
+import { describe, it, expect } from "vitest";
+import HeaderPrimary from "./index.vue";
 
 const factory = (props = {}) => {
-  return shallowMount(HeaderPrimary, { propsData: props });
+  return render(HeaderPrimary, {
+    props
+  });
 };
 
 describe("Header primary", () => {
   it("Header primary - should correctly mounted", () => {
     const wrapper = factory();
-    expect(wrapper.exists()).toBe(true);
+    return wrapper.getByTestId("header-primary");
   });
 });

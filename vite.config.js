@@ -1,7 +1,23 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+const path = require("path");
 
-// https://vitejs.dev/config/
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+
 export default defineConfig({
-  plugins: [vue()]
-})
+  plugins: [vue()],
+  test: {
+    // enable jest-like global test APIs
+    globals: true,
+    // simulate DOM with happy-dom
+    // (requires installing happy-dom as a peer dependency)
+    environment: "happy-dom"
+  },
+  resolve: {
+    alias: {
+      "@components": path.resolve(__dirname, "./ui/components"),
+      "@common": path.resolve(__dirname, "./common"),
+      "@ui": path.resolve(__dirname, "./ui")
+    }
+  },
+  dedupe: ["vue"]
+});
