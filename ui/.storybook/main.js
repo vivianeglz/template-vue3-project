@@ -17,6 +17,8 @@ module.exports = {
     config.resolve.alias = {
       ...config.resolve.alias,
       "@ui": path.resolve(__dirname, "../"),
+      "@client": path.resolve(__dirname, "../../client"),
+      "@components": path.resolve(__dirname, "../components"),
       "@common": path.resolve(__dirname, "../../common")
     };
 

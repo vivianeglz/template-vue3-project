@@ -15,6 +15,8 @@ module.exports = {
       alias: {
         map: [
           ["@ui", "../ui"],
+          ["@client", "../client"],
+          ["@components", "../ui/components"],
           ["@common", "../common"]
         ],
         extensions: [".js", ".json", ".vue"]

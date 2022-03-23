@@ -16,7 +16,8 @@ export default defineConfig({
     alias: {
       "@components": path.resolve(__dirname, "./ui/components"),
       "@common": path.resolve(__dirname, "./common"),
-      "@ui": path.resolve(__dirname, "./ui")
+      "@ui": path.resolve(__dirname, "./ui"),
+      "@client": path.resolve(__dirname, "./client")
     }
   },
   dedupe: ["vue"]
