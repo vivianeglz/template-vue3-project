@@ -1,0 +1,42 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  - package-ecosystem: npm
+    directory: "/server"
+    schedule:
+      interval: daily
+      time: "00:00"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  - package-ecosystem: npm
+    directory: "/client"
+    schedule:
+      interval: daily
+      time: "00:00"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  - package-ecosystem: npm
+    directory: "/ui"
+    schedule:
+      interval: daily
+      time: "00:00"
+    open-pull-requests-limit: 1
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
