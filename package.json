@@ -9,7 +9,7 @@
     "vue": "^3.2.25"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
+    "@babel/core": "^7.17.9",
     "@testing-library/vue": "^6.5.1",
     "@vitejs/plugin-vue": "^2.3.1",
     "babel-loader": "^8.2.3",
@@ -19,7 +19,7 @@
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "vite": "^2.8.0",
-    "vitest": "^0.7.10",
+    "vitest": "^0.9.3",
     "vue-loader": "^17.0.0",
     "webpack": "^5.70.0"
   }
