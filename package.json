@@ -6,7 +6,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.33"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
