@@ -6,8 +6,8 @@ const factory = (props = {}) => {
   return render(PageExample, { props });
 };
 
-describe("Button Primary", () => {
-  it("Button Primary - should correctly mounted", () => {
+describe("Page example", () => {
+  it("Page example - should correctly mounted", () => {
     const wrapper = factory();
     return wrapper.getByTestId("page-example");
   });
