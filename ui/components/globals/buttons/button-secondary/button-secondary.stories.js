@@ -1,8 +1,8 @@
-import ButtonPrimary from ".";
+import ButtonSecondary from ".";
 
 export default {
-  title: "globals/buttons/button-primary",
-  component: ButtonPrimary,
+  title: "globals/buttons/button-secondary",
+  component: ButtonSecondary,
   argTypes: {
     tag: {
       control: false
@@ -16,11 +16,11 @@ export default {
 };
 
 const Template = args => ({
-  components: { ButtonPrimary },
+  components: { ButtonSecondary },
   setup() {
     return { args };
   },
-  template: `<button-primary v-bind='args'>Button</button-primary>`
+  template: `<button-secondary v-bind='args'>Button</button-secondary>`
 });
 
 export const StoryDefault = Template.bind({});

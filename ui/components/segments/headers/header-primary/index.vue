@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ButtonPrimary from "@components/globals/buttons/button-primary/index.vue";
+import { ButtonPrimary } from "@components/globals/buttons";
 
 export default {
   name: "HeaderPrimary",
