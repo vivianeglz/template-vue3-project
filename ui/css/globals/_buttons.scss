@@ -20,4 +20,10 @@
     background: $color-neutral-100;
     color: $color-neutral-00;
   }
+
+  &--secondary {
+    background: $color-neutral-00;
+    color: $color-neutral-100;
+    border: 1px solid $color-neutral-100;
+  }
 }
