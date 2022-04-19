@@ -1,19 +1,20 @@
 @mixin generate-grid-item($grid-gutter, $i) {
   @if $grid-gutter == 0 {
-    flex-basis: calc(100% / #{12 / $i});
+    flex-basis: calc(100% / calc(12 / #{$i}));
   } @else {
-    flex-basis: calc(100% / #{12 / $i} - #{$grid-gutter});
+    flex-basis: calc(100% / calc(12 /#{$i}) - #{$grid-gutter});
   }
 }
 
 @mixin generate-grid($grid-gutter) {
-  margin-left: $grid-gutter / 2 * -1;
-  margin-right: $grid-gutter / 2 * -1;
+  margin-left: calc($grid-gutter / 2 * -1);
+  margin-right: calc($grid-gutter / 2 * -1);
 
+  /* stylelint-disable */
   > .grid__col {
     flex: 0 1 auto;
-    margin-left: $grid-gutter / 2;
-    margin-right: $grid-gutter / 2;
+    margin-left: calc($grid-gutter / 2);
+    margin-right: calc($grid-gutter / 2);
 
     &--s {
       @for $i from 1 through 12 {
@@ -47,9 +48,9 @@
       @for $i from 2 through 12 {
         &#{$i} {
           @if $grid-gutter == 0 {
-            margin-left: calc(100% / #{12 / ($i - 1)});
+            margin-left: calc(100% / calc(12 / #{$i - 1}));
           } @else {
-            margin-left: calc(100% / #{12 / ($i - 1)} + #{$grid-gutter} / 2);
+            margin-left: calc(100% / calc(12 / #{$i - 1}) + #{$grid-gutter} / 2);
           }
         }
       }
