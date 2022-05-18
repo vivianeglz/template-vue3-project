@@ -1,0 +1,40 @@
+.input-container {
+  &__label {
+    display: block;
+    margin: 0 0 4px 0;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    background: $color-neutral-00;
+    border-radius: $border-radius-s;
+    border: 1px solid $color-neutral-50;
+    padding: 0.5rem;
+    color: $color-neutral-100;
+    box-sizing: border-box;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__errorText {
+    margin: 5px 0 0 0;
+    color: $color-warning;
+    text-align: right;
+  }
+
+  &--error {
+    .input-container {
+      &__input {
+        border-color: $color-warning;
+      }
+
+      &__label {
+        color: $color-warning;
+      }
+    }
+  }
+}
