@@ -2,10 +2,9 @@ import _allowedAttributes from "./_allowedAttributes";
 
 /**
  * Takes attributes and converts it to valid HTML classes with standard BEM prefixes
- * example : mapAttrsToGridClasses(["s6", "m3"], "grid__col");
- * Returns : "grid__col--s6 grid__col--m3"
+ * example : mapAttrsToGridClasses(["s6", "m3"], "grid__col") => "grid__col--s6 grid__col--m3"
  *
- * @param {Object} Attrs object of attributes to be converted to valid HTML classes
+ * @param {Object} attrs object of attributes to be converted to valid HTML classes
  * @param {String} className className to prefix to the classes
  * @returns {String}
  */
