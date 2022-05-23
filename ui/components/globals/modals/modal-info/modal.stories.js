@@ -1,8 +1,8 @@
-import Modal from ".";
+import ModalInfo from ".";
 
 export default {
-  title: "globals/modal",
-  component: Modal,
+  title: "globals/modals/modal-info",
+  component: ModalInfo,
   argTypes: {
     title: {
       control: { type: "text" }
@@ -15,11 +15,11 @@ export default {
 };
 
 const Template = args => ({
-  components: { Modal },
+  components: { ModalInfo },
   setup() {
     return { args };
   },
-  template: `<modal v-bind='args' />`
+  template: `<modal-info v-bind='args' />`
 });
 
 export const StoryDefault = Template.bind({});
